@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wonders will happen</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+  </head>
+  <body>
+
+<h1>UNICORN !!!!!!!!!</h1>
+<img src="{% static "images/unicorn.jpeg" %}" alt="Uh oh don't show">
+</img>
+
+<div class="djangotwo">
+  {% if access_rec %}
+   <table>
+      <thead>
+        <th>
+          Site name
+        </th>
+          Date access
+        <th>
+        </th>
+      </thead>
+
+   {% for acc in access_rec %}
+   <tr>
+     <td>
+       {{ acc.name }}
+     </td>
+     <td>
+       {{ acc.date }}
+     </td>
+   </tr>
+   {% endfor %}
+   </table>
+   {% else %}
+   <p>no access record</p>
+   {% endif %}
+</div>
+
+  </body>
+</html>

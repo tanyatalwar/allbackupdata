@@ -1,0 +1,70 @@
+﻿django-admin startproject first_project
+activate myDjangoEnv
+
+command to start django server:
+-cd to project folder (python manage.py runserver)
+
+start application:
+ python manage.py startapp first_app
+
+register application name in settings.py:
+installed_app: add your project name here
+
+command to apply models after writing models:
+python manage.py migrate
+
+python manage.py makemigrations first_app
+
+again execute 
+ python manage.py migrate
+
+to come inside python shell
+python manage.py shell
+
+In [1]: from first_app.models import Topic
+
+In [2]: t= Topic(top_name="Socialnet")
+
+In [3]: t.save()
+
+In [4]: print(Topic.objects.all())
+<QuerySet [<Topic: Socialnet>]>
+
+
+register to admin.py
+
+superuser details
+Username (leave blank to use 'tanya'): tanya
+Email address: tanyatalwar8@gmail.com
+
+populating script
+
+
+
+
+
+
+#steps to setup django
+->django-admin startproject projectname
+->then go to setting.py in nested folder and enter your app name there in installed app
+->python manage.py migrate
+->python manage.py makemigration <yourappname>
+  example:python manage.py makemigrations myfirstblog
+
+
+-> first we set models in models.py
+ 
+
+django work on MTV
+password:compgirl@2012
+
+
+Username (leave blank to use 'tanya'): tanya
+Email address: tanyatalwar8@gmail.com
+Password:compgirl@1202
+Password (again):compgirl@1202
+Superuser created successfully.
+(base) tanya@tanya-HP-Pavilion-Notebook:~/Desktop/the_django_course/blog_project/myfirstblog$
+
+
+

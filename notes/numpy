@@ -1,0 +1,17 @@
+import numpy
+number = raw_input()
+input_list = number.split()
+total_print = int(input_list[2])
+for i in range(0,total_print):
+    if i == 0:
+      print(numpy.zeros((int(input_list[0]),int(input_list[1])), dtype = numpy.int))
+    else:
+      print "\n"    
+      print(numpy.zeros((int(input_list[0]),int(input_list[1])), dtype = numpy.int))
+
+for i in range(0,total_print):
+    if i == 2:
+      print numpy.ones((int(input_list[0]),int(input_list[1])), dtype = numpy.int)
+    else:
+      print numpy.ones((int(input_list[0]),int(input_list[1])), dtype = numpy.int)
+      print "\n" 

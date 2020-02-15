@@ -1,0 +1,54 @@
+HTTP protocol stands for Hypertext Transfer Protocol.It is application level protocol.HTTP is connectionless,media independent,stateless protocol used to exchange data between client and server.
+
+HTTP request methods:
+-GET
+-HEAD
+-POST
+-PUT
+-DELETE
+-CONNECT
+-OPTIONS
+-TRACE
+
+-GET method is used to retrieve or get data from the given server and GET request have no effect on other data present on server.The GET request retrieve data by specifying data in URL portion of request.
+
+-HEAD method is used is very much similar to GET the only difference is the server send response in form of headers and reponse line.There is no entity body.
+
+-POST method is used when we want to send some data to the server.This method send data to the server for example file,image which will be processed on the server and finally a response will be send back.
+
+-PUT method is used to request the server to store the included body-entity at the location specified in request URL.
+
+
+The States-Code element in a server response is a Three digit integer where where first digit define the class of response and the last two do the categorial role .
+
+-1xx is informational it define the request has been recevied and process is continue
+-2xx is success it define the action is successfully recevied,accepted and understood.
+-3xx is redirection it mean futher action must be taken to completethe request.
+-4xx is client error it mean it contain incorrect syntax or cannot be fulfilled.
+-5xx is server error it mean the server fail to fulfill an apperntly valid request.
+
+
+It depends on the project or purpose of development.PHP and Python both help you for fast and quick development.In PHP we can go for shared hosting but in python we require dedicated servers.Java comes into picture when you have a big enterprice customer and huge application need to be developed.PHP is just a server side scripting language whereas python and java is a full stack development language.I personally prefer python over java and PHP as Python is easier to code more structured than PHP and java.Python is strong in datascience,ML,AI,Automation,ORM(Object Relation Mapper) which saves a lot of time while coding and help in fast development it have some disadvantages like Security like in python we have direct acess to OS but that can handled.
+
+nginx,gunicorn
+
+No-SQL databases are build to overcome some limitations in relational databases. NoSQL databases are more scalable and provide superior performance.
+-It can store Large volumes of structured, semi-structured, and unstructured data
+-structure can be easily modify can easily adapt with Agile development cycle.
+-Support OOP
+-flexible to use
+-Easy to scale
+
+No-SQL databases are build to overcome some limitations in relational databases. NoSQL databases are more scalable and provide superior performance.
+-It can store Large volumes of structured, semi-structured, and unstructured data
+-structure can be easily modify can easily adapt with Agile development cycle.
+-Support OOP
+-flexible to use
+-Easy to scale
+
+-Follow ACID property
+-Support normalization that mean each fact is stored only once in database.
+-Well structured
+-Datatype Check constraints conditions such as NOT NULL, UNIQUE KEY, or FOREIGN KEY 
+-Authentication and access privileges
+-DELETE method is used to send request to the server to delete file at particular location specified in request URL.
